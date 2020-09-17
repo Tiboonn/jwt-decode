@@ -1,0 +1,28 @@
+name: jwt-decode
+summary: jwt decode tool
+description: >
+        A command line tool to decode JWT tokens.
+version: '1.0'
+license: MIT
+
+base: core18
+grade: stable
+confinement: strict
+
+parts:
+  script:
+    source: .
+    plugin: dump
+    organize:
+      jwtDecode: jwtDecode.sh
+  jq:
+    source: .
+    plugin: nil
+    stage-packages: [jq]
+
+apps:
+  payload:
+    command: /bin/sh jwtDecode.sh 2
+
+  header:
+    command: /bin/sh jwtDecode.sh 1 
