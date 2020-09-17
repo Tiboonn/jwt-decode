@@ -22,7 +22,7 @@ parts:
 
 apps:
   payload:
-    command: /bin/sh jwtDecode.sh 2
+    command: /bin/sh $SNAP/jwtDecode.sh 2
 
   header:
-    command: /bin/sh jwtDecode.sh 1 
+    command: /bin/sh $SNAP/jwtDecode.sh 1 
