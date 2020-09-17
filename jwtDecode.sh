@@ -17,7 +17,7 @@ decode_jwt() {
 
   
 decode_jwt $1 $2
-if echo $base64Decoded | jq empty; then
+if echo $base64Decoded | jq empty 2>/dev/null; then
   echo $base64Decoded | jq -r . | jq .
 else
   echo "JSON is invalid"
