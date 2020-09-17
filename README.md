@@ -1,6 +1,7 @@
 # jwt-decode
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/jwt-decode)
+[![jwt-decode](https://snapcraft.io//jwt-decode/badge.svg)](https://snapcraft.io/jwt-decode)
 
 Snap to decode JWT tokens
 
